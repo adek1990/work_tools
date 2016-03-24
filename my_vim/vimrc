@@ -63,4 +63,33 @@
 
     "--find setting--
     set incsearch        " 输入字符串就显示匹配点
-    set hlsearch 
+    set hlsearch
+
+	set guifont=Monospace\ 14 "set font and size
+	let Tlist_Use_Right_Window=1
+	let Tlist_File_Fold_Auto_Close=1
+
+
+
+	set tags+=~/.vim/tags/cpp
+	set tags+=$MyProject/tags
+	map <C-F12> :!ctags -R --c++-kinds=+pl --fields=+iaS --extra=+q .<CR>
+
+	"add symol auto
+	:inoremap ( ()<ESC>i  
+	:inoremap ) <c-r>=ClosePair(')')<CR>  
+	:inoremap { {<CR>}<ESC>O  
+	:inoremap } <c-r>=ClosePair('}')<CR>  
+	:inoremap [ []<ESC>i  
+	:inoremap ] <c-r>=ClosePair(']')<CR>  
+	:inoremap " ""<ESC>i  
+	:inoremap ' ''<ESC>i  
+	function! ClosePair(char)  
+		if getline('.')[col('.') - 1] == a:char
+			return "\<Right>"
+		else
+			return a:char
+	endfunction 
+
+
+
