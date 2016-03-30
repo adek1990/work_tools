@@ -14,3 +14,8 @@ sudo apt-get install diodon-plugins
 sudo add-apt-repository ppa:wiznote-team
 sudo apt-get update
 sudo apt-get install wiznote
+
+
+
+
+ppa:fcitx-team/nightly ppa:fcitx-team/nightly
