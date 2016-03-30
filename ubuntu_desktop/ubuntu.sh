@@ -9,3 +9,8 @@ sudo apt-get install my-weather-indicator
 sudo apt-get install variety 
 sudo apt-get install diodon 
 sudo apt-get install diodon-plugins 
+
+
+sudo add-apt-repository ppa:wiznote-team
+sudo apt-get update
+sudo apt-get install wiznote
