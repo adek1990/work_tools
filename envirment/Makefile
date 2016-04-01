@@ -20,7 +20,7 @@ endef
 default:bulid
 
 install_depends:
-	sudo apt-get install gcc g++ git binutils patch bzip2 flex bison make autoconf gettext texinfo unzip sharutils subversion libncurses5-dev ncurses-term zlib1g-dev gawk
+	sudo apt-get install gcc g++ git binutils patch bzip2 flex bison make autoconf gettext texinfo unzip sharutils subversion libncurses5-dev ncurses-term zlib1g-dev gawkl ocaml
 
 install_packages:
 	cd  $(OPENWRT_DIR);./scripts/feeds install $(INSTALL_PACKAGES)
