@@ -11,6 +11,6 @@ vim-addons install omnicppcomplete
 vim-addons install taglist
 echo "alias ctags='ctags -R --c++-kinds=+p --fields=+iaS --extra=+q'" >> ~/.bashrc
 
-
+cp vimrc ~/.vimrc
 
 
