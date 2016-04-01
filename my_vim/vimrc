@@ -54,7 +54,7 @@
 	set guifont=Monospace\ 14 "set font and size
 	let Tlist_Use_Right_Window=0
 	let Tlist_File_Fold_Auto_Close=1
-
+    let NERDTreeWinPos=1
 
 
 	set tags+=~/.vim/tags/cpp
