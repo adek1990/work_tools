@@ -1,0 +1,32 @@
+{
+  "configs": [
+    {
+      "server": "52.79.177.144",
+      "server_port": 8989,
+      "password": "pct",
+      "method": "aes-256-cfb",
+      "remarks": "amazon",
+      "auth": false
+    },
+    {
+      "server": "104.131.157.153",
+      "server_port": 8989,
+      "password": "pct",
+      "method": "aes-256-cfb",
+      "remarks": "xiaolai",
+      "auth": false
+    }
+  ],
+  "strategy": null,
+  "index": 0,
+  "global": false,
+  "enabled": true,
+  "shareOverLan": false,
+  "isDefault": false,
+  "localPort": 1080,
+  "pacUrl": " https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt",
+  "useOnlinePac": false,
+  "availabilityStatistics": false,
+  "autoCheckUpdate": false,
+  "logViewer": null
+}
