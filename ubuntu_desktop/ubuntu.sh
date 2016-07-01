@@ -1,3 +1,4 @@
+sudo apt-get install xrdp
 sudo add-apt-repository ppa:peterlevi/ppa
 sudo apt-get update
 sudo add-apt-repository ppa:atareao/atareao
