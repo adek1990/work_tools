@@ -101,7 +101,7 @@ macro AutoExpand()
         SetBufIns(hwnd,ln+1,sel.ichFirst)
         return
     }
-    if(language == 1)
+    if(1)
     {
         ExpandProcEN(szMyName,wordinfo,szLine,szLine1,nVer,ln,sel)
     }
@@ -2408,10 +2408,10 @@ macro FuncHeadCommentEN(hbuf, ln, szFunc, szMyName,newFunc)
         szLine = ""
     }
     InsBufLine(hbuf, ln, "/*****************************************************************************")
-    InsBufLine(hbuf, ln+1, " Prototype    : @szFunc@")
-    InsBufLine(hbuf, ln+2, " Description  : ")
+    InsBufLine(hbuf, ln+1, "** Prototype    : @szFunc@")
+    InsBufLine(hbuf, ln+2, "** Description  : ")
     oldln  = ln 
-    szIns = " Input        : "
+    szIns = "** Input        : "
     if(newFunc != 1)
     {
         //对于已经存在的函数输出输入参数表
@@ -2428,7 +2428,7 @@ macro FuncHeadCommentEN(hbuf, ln, szFunc, szMyName,newFunc)
             szTmp = cat(szIns,szTmp)
             InsBufLine(hbuf, ln+2, "@szTmp@")
             iIns = 1
-            szIns = "                "
+            szIns = "                : "
             i = i + 1
         }    
         closebuf(hTmpBuf)
@@ -2436,12 +2436,12 @@ macro FuncHeadCommentEN(hbuf, ln, szFunc, szMyName,newFunc)
     if(iIns == 0)
     {       
             ln = ln + 1
-            InsBufLine(hbuf, ln+2, " Input        : None")
+            InsBufLine(hbuf, ln+2, "** Input        : None")
     }
-    InsBufLine(hbuf, ln+3, " Output       : None")
-    InsBufLine(hbuf, ln+4, " Return Value : @szRet@")
-    InsBufLine(hbuf, ln+5, " Calls        : ")
-    InsBufLine(hbuf, ln+6, " Called By    : ")
+    InsBufLine(hbuf, ln+3, "** Output       : None")
+    InsBufLine(hbuf, ln+4, "** Return Value : @szRet@")
+    InsBufLine(hbuf, ln+5, "** Calls        : ")
+    InsBufLine(hbuf, ln+6, "** Called By    : ")
     InsbufLIne(hbuf, ln+7, " ");
     
     SysTime = GetSysTime(1);
@@ -2449,10 +2449,10 @@ macro FuncHeadCommentEN(hbuf, ln, szFunc, szMyName,newFunc)
     sz2=SysTime.month
     sz3=SysTime.day
 
-    InsBufLine(hbuf, ln + 8, "  History        :")
-    InsBufLine(hbuf, ln + 9, "  1.Date         : @sz1@/@sz2@/@sz3@")
-    InsBufLine(hbuf, ln + 10, "    Author       : @szMyName@")
-    InsBufLine(hbuf, ln + 11, "    Modification : Created function")
+    InsBufLine(hbuf, ln + 8, "** History        :")
+    InsBufLine(hbuf, ln + 9, "** Date         : @sz1@/@sz2@/@sz3@")
+    InsBufLine(hbuf, ln + 10, "** Author       : @szMyName@")
+    InsBufLine(hbuf, ln + 11, "** Modification : Created function")
     InsBufLine(hbuf, ln + 12, "")    
     InsBufLine(hbuf, ln + 13, "*****************************************************************************/")
     if ((newFunc == 1) && (strlen(szFunc)>0))
@@ -2474,7 +2474,7 @@ macro FuncHeadCommentEN(hbuf, ln, szFunc, szMyName,newFunc)
     szContent = Ask("Description")
     DelBufLine(hbuf,oldln + 2)
     setWndSel(hwnd,sel)
-    newln = CommentContent(hbuf,oldln + 2," Description  : ",szContent,0) - 2
+    newln = CommentContent(hbuf,oldln + 2,"** Description  : ",szContent,0) - 2
     ln = ln + newln - oldln
     if ((newFunc == 1) && (strlen(szFunc)>0))
     {
