@@ -20,3 +20,5 @@ sudo apt-get install wiznote
 
 
 ppa:fcitx-team/nightly ppa:fcitx-team/nightly
+
+sudo apt-get install guake
