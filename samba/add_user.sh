@@ -1,9 +1,11 @@
-sudo echo "[pct]" >> /etc/samba/smb.conf
-sudo echo "comment = Home Directories" >> /etc/samba/smb.conf
-sudo echo "browseable = yes" >> /etc/samba/smb.conf
-sudo echo "writable = yes" >> /etc/samba/smb.conf
-sudo echo "path = home/pct" >> /etc/samba/smb.conf
-sudo echo "valid users = pct" >> /etc/samba/smb.conf
+cp /etc/samba/smb.conf ./
+echo "[pct]" >> smb.conf
+echo "comment = Home Directories" >> smb.conf
+echo "browseable = yes" >> smb.conf
+echo "writable = yes" >> smb.conf
+echo "path = home/pct" >> smb.conf
+echo "valid users = pct" >> smb.conf
+sudo cp smb.conf /etc/samba/smb.conf
 
 sudo smbpasswd -a pct
 
