@@ -24,3 +24,6 @@ ppa:fcitx-team/nightly ppa:fcitx-team/nightly
 sudo apt-get install guake
 
 synclient TapButton3=2
+
+sudo apt-get install gdebi
+sudo gdebi sogoupinyin.deb
