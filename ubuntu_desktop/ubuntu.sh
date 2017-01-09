@@ -27,3 +27,17 @@ synclient TapButton3=2
 
 sudo apt-get install gdebi
 sudo gdebi sogoupinyin.deb
+
+sudo add-apt-repository ppa:ubuntu-elisp/ppa
+sudo apt-get update
+sudo apt-get install emacs-snapshot emacs-snapshot-el
+
+sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
+sudo apt-get update
+sudo apt-get update && sudo apt-get install qbittorrent 
+
+sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
+sudo apt-get update
+sudo apt-get update && sudo apt-get install qbittorrent 
+
+
