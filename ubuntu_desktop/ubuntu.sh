@@ -36,8 +36,10 @@ sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
 sudo apt-get update
 sudo apt-get update && sudo apt-get install qbittorrent 
 
-sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:team-xbmc/ppa
 sudo apt-get update
-sudo apt-get update && sudo apt-get install qbittorrent 
+sudo apt-get install kodi
 
+apt-get install xsel
 
