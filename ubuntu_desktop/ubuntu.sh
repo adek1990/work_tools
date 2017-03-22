@@ -1,9 +1,4 @@
 sudo apt-get install xrdp
-sudo add-apt-repository ppa:peterlevi/ppa
-sudo apt-get update
-sudo add-apt-repository ppa:atareao/atareao
-sudo apt-get update
-sudo apt-get install indicator-multiload 
 sudo apt-get install unity-tweak-tool
 sudo apt-get install indicator-cpufreq 
 sudo apt-get install my-weather-indicator
@@ -12,21 +7,11 @@ sudo apt-get install diodon
 sudo apt-get install diodon-plugins 
 
 
-sudo add-apt-repository ppa:wiznote-team
-sudo apt-get update
-sudo apt-get install wiznote
-
-
-
-
-ppa:fcitx-team/nightly ppa:fcitx-team/nightly
-
 sudo apt-get install guake
 
 synclient TapButton3=2
 
 sudo apt-get install gdebi
-sudo gdebi sogoupinyin.deb
 
 sudo add-apt-repository ppa:ubuntu-elisp/ppa
 sudo apt-get update
@@ -41,5 +26,14 @@ sudo add-apt-repository ppa:team-xbmc/ppa
 sudo apt-get update
 sudo apt-get install kodi
 
-apt-get install xsel
+apt-get install xsel shutter clipit
+
+sudo add-apt-repository ppa:webupd8team/sublime-text-3
+sudo apt-get update
+sudo apt-get install sublime-text-installer
+
+sudo add-apt-repository ppa:notepadqq-team/notepadqq
+sudo apt-get update
+sudo apt-get install notepadqq
+
 
