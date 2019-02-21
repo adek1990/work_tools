@@ -37,4 +37,5 @@ sudo apt-get update
 sudo apt-get install notepadqq
 
 
-apt-get install meld
+sudo apt-get install meld
+sudo apt-get install gnome-tweak-tool
