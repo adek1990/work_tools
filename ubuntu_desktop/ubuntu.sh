@@ -37,3 +37,4 @@ sudo apt-get update
 sudo apt-get install notepadqq
 
 
+apt-get install meld
